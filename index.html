@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="1st-popup.css">
+    <link rel="stylesheet" href="2nd-popup.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img width="40" height="40" src="images/profile.png" alt="profile">
+            <h3>Adonis School</h3>
+        </div>
+        <div class="search">
+            <img width="20" height="20" src="images/search.png" alt="search">
+            <input type="search" name="search" id="" placeholder="Filter member by Skool ID or name">
+        </div>
+        <div class="global">
+            <img width="20" height="20" src="images/global.png" alt="global">
+            <p>Global</p>
+        </div>
+    </header>
+    <div class="map">
+        <iframe
+            src="
+        https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6445491.741780403!2d-101.98280277904581!3d37.92545964365383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0e6d54822e37d%3A0xb55bc4590466bd72!2sMissouri%2C%20USA!5e0!3m2!1sen!2s!4v1714166017636!5m2!1sen!2s"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <details class="dropdown">
+        <summary role="button">
+            <a class="button"><img src="images/location.jpg" alt="" width="40" height="40"></a>
+        </summary>
+        <ul class="dropdown-l">
+            <!-- <li><a id="myBtn" href="#"><img width="12" height="12" src="images/pencil.png" alt="pencil">&nbsp;Edit
+                    Location</a>
+            </li> -->
+            <li><a id="myBtn2" href="#"><img width="12" height="12" src="images/zoom in.png" alt="pencil">&nbsp;Add your
+                    location</a>
+            </li>
+            <li><a href="#"><img width="12" height="12" src="images/report a bug.png" alt="pencil">&nbsp;Report a
+                    bug</a></li>
+            <li><a href="#"><img width="12" height="12" src="images/own map.png" alt="pencil">&nbsp;Create your own
+                    map</a></li>
+        </ul>
+    </details>
+    <!-- 1st modal 1 -->
+    <!-- Trigger/Open The Modal -->
+
+    <!-- The Modal 1 -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Edit your location on the map</h3><br>
+            <label for="1st-popup">Skool ID</label><br>
+            <input type="email" name="skool-id-popup" id="1st-popup" class="first-popup-email" placeholder="@ emilio">
+            <label for="1st-popup">Display Name</label><br>
+            <input required type="text" name="skool-id-popup" id="1st-popup" class="first-popup-email"
+                value="test"><br><br>
+            <label for="1st-popup">Location</label><br>
+            <input required type="text" name="skool-id-popup" id="1st-popup" class="first-popup-email"
+                placeholder="Type to search...">
+            <p>For your safety, please add an approximate location and NOT your exact address</p>
+            <div class="first-modal-btn">
+                <button class="close-btn close" onclick="closeModal()">close</button>
+                <button class="edit">Edit</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 1st modal 1 -->
+    <!-- Trigger/Open The Modal -->
+
+    <!-- The Modal 1 -->
+    <div id="myModal2" class="modal2">
+
+        <!-- Modal content -->
+        <div class="modal-content2">
+            <span class="close2">&times;</span>
+            <h3>Add your location on the map</h3><br>
+            <!-- <label for="1st-popup">Skool ID</label><br>
+            <input type="email" name="skool-id-popup" id="1st-popup" class="first-popup-email2"
+                placeholder="@ first-last-123456">
+            <a href="#">How to find?</a><br><br> -->
+            <div class="mt-3">
+                <p>Skool ID</p>
+                <input type="text" name="id" class="inp-text" placeholder="@ first-last-123456">
+                <div class="link">
+                    <button type="button" id="popoverToggle">How to find?</button>
+
+                    <!-- <dialog open> -->
+                    <div class="popup-cont" id="popup-cont">
+                        <h3>Finding your Skool ID:</h3>
+                        <p>Go to <span>Skool</span> Picture at the top right > Profile > The @ tag below your
+                            name</p>
+                    </div>
+
+                    <!-- </dialog> -->
+                </div>
+            </div>
+            <label for="1st-popup">Display Name</label><br>
+            <input required type="text" name="skool-id-popup" id="1st-popup2" class="first-popup-email2"
+                placeholder="First Last"><br><br>
+            <label for="1st-popup">Location</label><br>
+            <input required type="text" name="skool-id-popup" id="1st-popup2" class="first-popup-email2"
+                placeholder="Type to search...">
+            <p class="discription">For your safety, please add an approximate location and NOT your exact address</p>
+            <div class="first-modal-btn2">
+                <button class="close-btn2 close2" onclick="closeModal2()">close</button>
+                <button class="edit2">Edit</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="dropdown.js"></script>
+    <script src="1st-dropdown.js"></script>
+    <script src="./2nd-dropdown.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
